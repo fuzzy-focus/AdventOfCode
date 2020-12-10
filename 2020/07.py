@@ -1,3 +1,4 @@
+print(f"Day {__file__[:-3]}")
 import re
 import collections
 from pprint import pprint

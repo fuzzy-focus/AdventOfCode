@@ -1,3 +1,4 @@
+print(f"Day {__file__[:-3]}")
 import re
 
 fields = {"byr", "iyr", "eyr", "hgt", "hcl", "ecl", "pid", "cid",}

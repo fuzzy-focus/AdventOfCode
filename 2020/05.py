@@ -1,3 +1,4 @@
+print(f"Day {__file__[:-3]}")
 with open("05.txt") as f:
     data = f.read().splitlines()
 

@@ -1,3 +1,4 @@
+print(f"Day {__file__[:-3]}")
 import itertools
 
 with open("09.txt") as f:

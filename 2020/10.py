@@ -1,3 +1,5 @@
+print(f"Day {__file__[:-3]}")
+
 from pprint import pprint
 
 with open("10.txt") as f:

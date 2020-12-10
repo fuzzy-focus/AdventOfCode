@@ -1,3 +1,4 @@
+print(f"Day {__file__[:-3]}")
 import functools
 import operator
 from pprint import pprint
