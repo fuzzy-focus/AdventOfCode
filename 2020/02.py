@@ -1,12 +1,15 @@
-print(f"Day {__file__[:-3]}")
 #5-11 t: glhbttzvzttkdx
 #2-4 f: cfkmf
 #9-12 m: mmmmmmmmmmmmm
 #2-10 z: vghqbzbcxf
 import re
 
-with open("02.txt") as f:
-    data = re.findall(r"(\d+)-(\d+) (\w): (\w+)", f.read())
+day = __file__[:-3]
+print(f"Day {day}")
+with open(f"{day}.txt") as f:
+    text = f.read()
+
+data = re.findall(r"(\d+)-(\d+) (\w): (\w+)", text)
 
 data = [(int(a), int(b), c, d) for a,b,c,d in data]
 

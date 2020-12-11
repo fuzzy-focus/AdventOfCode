@@ -1,9 +1,10 @@
-print(f"Day {__file__[:-3]}")
 import re
 import collections
 from pprint import pprint
 
-with open("07.txt") as f:
+day = __file__[:-3]
+print(f"Day {day}")
+with open(f"{day}.txt") as f:
     text = f.read()
 
 rule_pattern = re.compile(r"(.*) bags contain (.*)\.")

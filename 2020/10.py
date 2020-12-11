@@ -1,8 +1,8 @@
-print(f"Day {__file__[:-3]}")
-
 from pprint import pprint
 
-with open("10.txt") as f:
+day = __file__[:-3]
+print(f"Day {day}")
+with open(f"{day}.txt") as f:
     text = f.read()
 
 ad = [int(i) for i in text.split()]

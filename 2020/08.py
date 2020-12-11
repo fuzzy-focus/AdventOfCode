@@ -1,4 +1,8 @@
-print(f"Day {__file__[:-3]}")
+day = __file__[:-3]
+print(f"Day {day}")
+with open(f"{day}.txt") as f:
+    text = f.read()
+
 example = """nop +0
 acc +1
 jmp +4
@@ -8,8 +12,6 @@ acc -99
 acc +1
 jmp -4
 acc +6"""
-with open("08.txt") as f:
-    text = f.read()
 
 #text = example
 

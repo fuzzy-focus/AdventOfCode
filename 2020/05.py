@@ -1,6 +1,9 @@
-print(f"Day {__file__[:-3]}")
-with open("05.txt") as f:
-    data = f.read().splitlines()
+day = __file__[:-3]
+print(f"Day {day}")
+with open(f"{day}.txt") as f:
+    text = f.read()
+
+data = text.splitlines()
 
 s2id = lambda x: int(x.replace("B","1").replace("F","0").replace("L","0").replace("R","1"), base=2)
 

@@ -1,9 +1,12 @@
-print(f"Day {__file__[:-3]}")
 import functools
 import operator
 from pprint import pprint
-with open("06.txt") as f:
+
+day = __file__[:-3]
+print(f"Day {day}")
+with open(f"{day}.txt") as f:
     text = f.read()
+
 forms = [g.strip().split("\n") for g in text.split("\n\n")]
 
 counts = [len(functools.reduce(operator.or_,map(set,group))) for group in forms]

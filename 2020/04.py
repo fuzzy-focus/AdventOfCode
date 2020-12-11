@@ -1,11 +1,13 @@
-print(f"Day {__file__[:-3]}")
 import re
 
+day = __file__[:-3]
+print(f"Day {day}")
+with open(f"{day}.txt") as f:
+    text = f.read()
+
+passports = text.split('\n\n')
 fields = {"byr", "iyr", "eyr", "hgt", "hcl", "ecl", "pid", "cid",}
 fields.discard("cid")
-
-with open("04.txt") as f:
-    passports = f.read().split("\n\n")
 
 data = [re.findall(r"(\S+):(\S+)", pp) for pp in passports]
 data = [{a:b for a,b in pp} for pp in data]

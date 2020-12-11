@@ -1,7 +1,8 @@
-print(f"Day {__file__[:-3]}")
 import itertools
 
-with open("01.txt") as f:
+day = __file__[:-3]
+print(f"Day {day}")
+with open(f"{day}.txt") as f:
     text = f.read()
 
 data = [int(x) for x in text.split()]
